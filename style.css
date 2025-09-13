@@ -1,0 +1,180 @@
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            min-height: 100vh;
+            color: #555;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(189, 118, 159, 0.2);
+            border: 2px solid rgba(255, 182, 193, 0.3);
+        }
+
+        .profile-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            background: linear-gradient(45deg, #ffd1dc, #ffb6c1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(255, 182, 193, 0.3);
+        }
+
+        .profile-image {
+            flex-shrink: 0;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 25px;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 12px rgba(189, 118, 159, 0.3);
+            background: #ffd1dc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-details h1 {
+            color: #8B4B8C;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 28px;
+        }
+
+        .profile-details .title {
+            color: #B85B8C;
+            font-weight: 500;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .profile-details .bio {
+            color: #666;
+            font-style: italic;
+            font-size: 14px;
+        }
+
+        .info-section {
+            margin-top: 25px;
+        }
+
+        .info-section h2 {
+            color: #8B4B8C;
+            margin-bottom: 15px;
+            font-size: 22px;
+            text-align: center;
+            position: relative;
+        }
+
+        .info-section h2:after {
+            content: '✨';
+            margin-left: 10px;
+        }
+
+        .info-section > p {
+            background: linear-gradient(45deg, #ffeef0, #fff0f5);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #ffb6c1;
+            font-size: 14px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .info-item {
+            background: linear-gradient(45deg, #fff0f5, #ffeef0);
+            padding: 18px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(255, 182, 193, 0.2);
+            border: 1px solid rgba(255, 182, 193, 0.3);
+        }
+
+        .info-item h3 {
+            color: #8B4B8C;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .info-item strong {
+            color: #B85B8C;
+            font-size: 14px;
+        }
+
+        .info-item p {
+            color: #666;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .info-item ul {
+            margin-left: 20px;
+            color: #666;
+        }
+
+        .info-item li {
+            margin-bottom: 3px;
+            font-size: 14px;
+        }
+
+.simple-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.simple-form input,
+.simple-form textarea {
+    padding: 15px;
+    border: 2px solid #FFB6C1;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.simple-form input:focus,
+.simple-form textarea:focus {
+    outline: none;
+}
+
+.simple-form button {
+    background: linear-gradient(135deg, #FF69B4, #DA70D6);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
