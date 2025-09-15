@@ -19,11 +19,17 @@
                 <p class="bio">I love a good challenge and learning new skills every day! ✨</p>
             </div>
         </div>
-                
+        
         <div class="info-section">
-            <h2>About Me</h2>
+            
+            <h2 onclick="toggleContent('about-content')">About Me</h2>
             <p>I am a dedicated IT student with a passion for technology and a keen interest in IT auditing. I thrive on challenges and am always eager to learn new skills to enhance my expertise in the field. 💪</p>
-                        
+            
+    
+            <div id="about-content" class="toggle-content">
+                <p><strong>More about me:</strong> I enjoy solving problems and am always excited to learn about new technologies in cybersecurity!</p>
+            </div>
+            
             <div class="info-grid">
                 <div class="info-item">
                     <strong>Hobbies:</strong> Reading 📚, Traveling ✈️, Coding 💻
@@ -48,17 +54,31 @@
                         <li>Project Management</li>
                     </ul>
                 </div>
-                 <div class="contact-section">
-            <h2>Say Hello! 👋</h2>
-            <form class="simple-form">
-                <input type="text" placeholder="Your Name" >
-                <input type="email" placeholder="Your Email" >
-                <textarea placeholder="Your Message" rows="4" ></textarea>
-                <button type="submit">Send Message 💌</button>
-            </form>
+                
+                <div class="contact-section">
+                    <h2>Say Hello! 👋</h2>
+                    
+                    <form class="simple-form" id="contactForm">
+                        <input type="text" placeholder="Your Name" id="name" required>
+                        <div class="error-message" id="nameError"></div>
+                        
+                        <input type="email" placeholder="Your Email" id="email" required>
+                        <div class="error-message" id="emailError"></div>
+                        
+                        <textarea placeholder="Your Message" rows="4" id="message" required></textarea>
+                        <div class="error-message" id="messageError"></div>
+                        
+                        <button type="submit">Send Message 💌</button>
+                    </form>
+                
+                    <div class="success-message" id="successMessage">
+                        🎉 Thank you! I'll get back to you soon. ✨
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    
+    <script src="app.js"></script>
 </body>
-</html>
-
+ </html>
